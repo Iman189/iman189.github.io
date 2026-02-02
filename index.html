@@ -29,24 +29,24 @@
       font-size: 14px;
     }
 
-    /* HEADER AVEC LOGO VRAIMENT À GAUCHE */
+    /* HEADER */
     header {
       background-color: #2f3e46;
       padding: 15px 40px;
       display: flex;
       align-items: center;
-      justify-content: space-between; /* logo à gauche, menu centré */
+      justify-content: space-between;
     }
 
     .logo {
-      width: 95px; /* taille légèrement plus grande */
+      width: 95px;
       height: auto;
     }
 
     nav {
       flex: 1;
       display: flex;
-      justify-content: center; /* menu centré */
+      justify-content: center;
     }
 
     nav ul {
@@ -123,6 +123,7 @@
     .arrow.left { left: 10px; }
     .arrow.right { right: 10px; }
 
+    /* FOOTER */
     .footer {
       background-color: #2f3e46;
       color: white;
@@ -144,6 +145,72 @@
 
     .footer p {
       color: white;
+    }
+
+    /* --- VERSION MOBILE --- */
+    @media (max-width: 768px) {
+
+      /* HEADER */
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+      }
+
+      .logo {
+        width: 70px;
+        margin-bottom: 10px;
+      }
+
+      /* MENU */
+      nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      nav ul li a {
+        font-size: 14px;
+      }
+
+      /* TITRES */
+      h1 {
+        font-size: 22px;
+        padding: 0 10px;
+      }
+
+      h2 {
+        font-size: 18px;
+        padding: 0 10px;
+      }
+
+      /* SLIDER */
+      .slider {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        margin-top: 20px;
+      }
+
+      .arrow {
+        font-size: 20px;
+        padding: 4px 8px;
+      }
+
+      /* PARAGRAPHES */
+      p {
+        width: 90%;
+        font-size: 14px;
+      }
+
+      /* FOOTER */
+      .footer {
+        padding: 20px;
+      }
+
+      .footer a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
 
@@ -204,14 +271,10 @@
   <p>Explorez nos semaines culturelles et patrimoniales à travers le Maroc.</p>
 
   <div class="footer">
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html">Contact</a>
+    <a href="/apropos.html">À propos</a>
+    <a href="/contact.html">Contact</a>
     <p>&copy; 2026 AMI – Tous droits réservés</p>
   </div>
 
 </body>
 </html>
-
-
-
-
